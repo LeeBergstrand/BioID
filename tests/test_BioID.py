@@ -13,7 +13,7 @@ from BioID import BioID
 # ================================================================
 class TestFormatDefinitions(object):
 	def test_formats(self):
-		with open("./testing/format_tests.csv", "rU") as formats_file:
+		with open("./format_tests.csv", "rU") as formats_file:
 			test_files = formats_file.readlines()[1:]
 
 		for test_file in test_files:
