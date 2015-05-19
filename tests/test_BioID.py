@@ -13,7 +13,7 @@ from BioID import BioID
 # ================================================================
 class TestFormatDefinitions(object):
 	def test_formats(self):
-		with open("./format_tests.csv", "rU") as formats_file:
+		with open("./tests/format_tests.csv", "rU") as formats_file:
 			test_files = formats_file.readlines()[1:]
 
 		for test_file in test_files:
@@ -23,6 +23,6 @@ class TestFormatDefinitions(object):
 	@staticmethod
 	def check_format(test_file, expected_format):
 		# Putting the test file path here saves having to specify a path for each test file in the CSV
-		test_file_path = "./testing/testFiles/" + test_file
+		test_file_path = "./tests/testFiles/" + test_file
 		id_results = BioID("./BioIDFormatInfo.yml").identify([test_file_path])
 		assert id_results[test_file_path] == expected_format
