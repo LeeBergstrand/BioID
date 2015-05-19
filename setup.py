@@ -36,13 +36,13 @@ setup(
                  'BioID'},
     include_package_data=True,
     install_requires=requirements,
-    license="BSD",
-    zip_safe=False,
+    license="MIT",
+    zip_safe=True,
     keywords='BioID',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',
@@ -50,6 +50,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+		'Programming Language :: Python :: Implementation :: PyPy',
+		'Operating System :: OS Independent',
+		'Topic :: Scientific/Engineering :: Bio-Informatics'
     ],
     test_suite='tests',
     tests_require=test_requirements
