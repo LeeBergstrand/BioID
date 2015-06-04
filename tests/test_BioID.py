@@ -5,8 +5,7 @@
 # Description: A python script which autogenerates unit tests for BioID Class
 # ==============================================================================================
 
-from BioID import BioID
-
+from ..BioID.BioID import BioID
 
 # ================================================================
 # Nose test generator to iterate format test files defined in CSVs
@@ -24,5 +23,5 @@ class TestFormatDefinitions(object):
 	def check_format(test_file, expected_format):
 		# Putting the test file path here saves having to specify a path for each test file in the CSV
 		test_file_path = "./tests/testFiles/" + test_file
-		id_results = BioID("./BioIDFormatInfo.yml").identify([test_file_path])
+		id_results = BioID("./BioID/BioIDFormatInfo.yml").identify([test_file_path])
 		assert id_results[test_file_path] == expected_format
