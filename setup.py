@@ -15,7 +15,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
-    # TODO: put package requirements here
+    'PyYAML',
+    'binaryornot'
 ]
 
 test_requirements = [
@@ -24,7 +25,7 @@ test_requirements = [
 
 setup(
     name='BioID',
-    version='0.1.0',
+    version='1.0',
     description="A python package for autonomously identifying Bioinformatic file formats.",
     long_description=readme + '\n\n' + history,
     author="Lee Bergstrand",
@@ -38,7 +39,7 @@ setup(
     install_requires=requirements,
     license="MIT",
     zip_safe=True,
-    keywords='BioID',
+    keywords='BioID Bioinformatics ',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
