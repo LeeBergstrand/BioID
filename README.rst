@@ -2,7 +2,7 @@
 BioID
 ===============================
 
-.. image:: https://magnum.travis-ci.com/LeeBergstrand/BioID.svg?token=gFspxRhLX7xmypaS1yi5&branch=master
+.. image:: https://travis-ci.org/LeeBergstrand/BioID.svg?branch=master
         :target: https://magnum.travis-ci.com/LeeBergstrand/BioID
 
 .. image:: https://img.shields.io/pypi/v/BioID.svg
