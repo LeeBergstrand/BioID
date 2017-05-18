@@ -115,7 +115,7 @@ class BioID(object):
 			identified["unknown_text"] = self.identify_text(input_data)
 		else:
 			# indentify() was (probably) passed some useless garbage
-			print(("Error: identify() received unrecognized input data: %s" % str(input_data)))
+			print("Error: identify() received unrecognized input data: %s" % str(input_data))
 			sys.exit(1)
 
 		return identified
